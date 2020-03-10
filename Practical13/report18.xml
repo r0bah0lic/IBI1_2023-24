@@ -1,0 +1,9 @@
+<Report key="Report_18" name="time course" taskType="timeCourse" separator="," precision="6">
+  <Comment>
+  </Comment>
+  <Table printTitle="1">
+    <Object cn="CN=Root,Model=New Model_1,Reference=Time"/>
+    <Object cn="CN=Root,Model=New Model_1,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
+    <Object cn="CN=Root,Model=New Model_1,Vector=Compartments[compartment],Vector=Metabolites[B],Reference=Concentration"/>
+  </Table>
+</Report>

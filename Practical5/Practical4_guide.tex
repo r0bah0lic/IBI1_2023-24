@@ -1,0 +1,230 @@
+\documentclass[pdflatex,a4paper]{article}
+
+\usepackage{pgffor, ifthen}
+\newcommand{\notes}[3][\empty]{%
+    \noindent \vspace{10pt}\\
+    \foreach \n in {1,...,#2}{%
+        \ifthenelse{\equal{#1}{\empty}}
+            {\rule{#3}{0.5pt}\\}
+            {\rule{#3}{0.5pt}\vspace{#1}\\}
+        }
+}
+
+\usepackage{graphicx}
+
+\usepackage[margin=3cm]{geometry}
+
+\title{Practical 4. Variables, Booleans, and loops}
+
+\author{MI Stefan}
+
+\date{IBI1, 2018/19}
+
+
+\usepackage{url}
+\usepackage{amsmath}
+
+\begin{document}
+
+\newcommand{\<}{\textless}
+\renewcommand{\>}{\textgreater}
+
+
+\maketitle
+
+\section{Learning objectives}
+
+\begin{itemize}
+\item
+Explain how variables work within a piece of code
+\item
+Explain the concept of loops
+\item
+Understand and use Booleans
+\item
+Plan a project using pseudocode
+\item
+Create and use variables in Python 
+\item
+Create and use loops and Booleans in Python
+\end{itemize}
+
+\section{Getting the folder for week 4}
+
+\begin{itemize}
+\item
+First of all, you need to fetch the materials for week 4 from GitHub. Open up your repository \verb=IBI1_2018-19= in GitKraken.
+\item
+Add the original repository (not your fork) to the list of remotes. You can do this by going to ``Remote'' on the left side of your GitKraken window, clicking on the ``+'', and then selecting the GitHub Repo \verb=MelanieIStefan/IBI1_2018-19= from the pull-down menu, then clicking ``Add Remote''. 
+\item
+Once the remote has been added, go to the three dots next to ``Master'' under the MelanieIStefan remote repo. Click ``checkout MelanieIStefan/master''
+\item
+You now (confusingly) have two master branches, one from the course remote, and one that's your own. Merge them in such a way that you now have the new Practical 4 folder (plus content), but also your files in the Practical 3 folder haven't changed and are still yours.
+\item
+At the end of tutorial, don't forget to push your changes to your GitHub repo. 
+\end{itemize}
+
+\section{Working with Spyder}
+
+\begin{itemize}
+\item
+You have installed Spyder as part of your anaconda-navigator installation. Start up Spyder.
+\item
+Explore the Spyder window. There is a console in the lower right part. You can use this to type in python commands directly and see the output, for instance \verb=1+1=
+\item
+The main window is for scripts. A python script is a collection of commands. You can write several lines of code and then run them all together by clicking ``Run''.  If there is a result, it will be shown in the console. Before you run the script for the first time, you will have to save it to a .py file.
+\item
+You can also run individual lines by selecting them and then clicking Run \(\rightarrow\) Run selection or current line
+\item
+Try it out: Type the following in a file called \verb=helloworld.py=
+\begin{verbatim}
+a = "hello "
+b = "world!"
+print(a+b)
+\end{verbatim}
+\item
+Python files are not that different from text files. In particular, they can be put under version control using git and GitKraken. For more complex projects in particular, make sure you commit changes on a regular basis, so you can go back to earlier versions if you run into problems.
+\end{itemize}
+
+
+\section{Working with variables}
+
+\begin{itemize}
+\item
+Start a new file called \verb=variables.py=
+\end{itemize}
+
+
+\subsection{Some simple math}
+
+\begin{itemize}
+\item
+Think of a 3-digit number (e.g. 123). Store it in a variable called \verb=a=. 
+\item
+Create another variable called \verb=b= and assign to it a six-digit number, created by writing the digits of \verb=a= twice (in this example, 123123). 
+\item
+Can \verb=b= be divided by 7 (giving an integer)?  Use \verb=%= to check!  Create a new variable \verb=c=. Assign it to be \verb=b= divided by 7.
+\item
+Create a new variable \verb=d=. Assign it to \verb=c= divided by 11.
+\item
+Create a new variable called \verb=e= that is \verb=d= divided by 13.
+\item
+Compare \verb=e= to \verb=a=. Which of them is greater? Why?
+\end{itemize}
+
+\subsection{Booleans}
+
+\begin{itemize}
+\item
+You learned in lecture that ``either X or Y'' is the same as ``(X and not Y) or (Y and not X)''. Make Boolean variables X and Y. Make a variable Z that encodes ``(X and not Y) or (Y and not X)'' and verify that it true if either X or Y (but not both) are true. Make a variable W that encodes Zhiwen's more elegant solution (``X !=Y'') and verify that W and Z are always the same, no matter the values of X and Y. 
+\end{itemize}
+
+\section{Collatz sequence}
+
+\begin{itemize}
+\item
+Start a new file called \verb=collatz.py=
+\item
+For any positive integer \(n\), the next number in the Collatz sequence can be obtained by either dividing by 2 (if \(n\) is even) or multiplying by 3 and adding 1 (if \(n\) is odd). It seems that Collatz sequences always end with \(4-2-1-4-2-1-4-2-1-\dots\), no matter where they started. 
+\item
+Write a script that starts with a positive integer \verb=n= and computes and displays the Collatz sequence of \verb-n- and ends when you reach \(1\) for the first time. (Python may decide to display some figure(s) after the comma, e.g. ``25.0'' instead of ``25''. This is nothing to worry about at this stage.) Before you write the actual code, plan your project using pseudocode and comments (lines starting with \verb=#=). When you write the actual code, leave the pseudocode comments in.
+\end{itemize}
+
+
+
+\section{Mystery Code}
+\begin{itemize}
+\item
+Look at file \verb=mysterycode.py=
+\item
+What does it do? Run it a few times and formulate a hypothesis. 
+\item
+Check whether your hypothesis is correct by going through the code line by line. Sometimes, it's helpful to do this using pen and paper, but it is up to you. If you find out what a particular line does, use comments (lines starting with \verb=#=) to note your thoughts. We have done this at the beginning of the document, e.g. in lines 4-6 to explain line 7. 
+\item
+Once you have confirmed what the code does, write a one-sentence description next to \verb=# Answer:= on line 2.
+\end{itemize}
+
+
+
+
+\section{Powers of 2}
+
+\begin{itemize}
+\item
+Start a new file called \verb=powersof2.py=
+\item
+Every number can be written as a sum of powers of 2. For instance,
+
+\(
+2019 = 2^{10} + 2^{9} + 2^{8} + 2^{7} + 2^{6} + 2^{5} + 2^{1} + 2^{0}
+\)
+\item
+Write some code that starts with some number \verb=x= (e.g. \verb_x=2019_) and computes the powers of 2 that make up \verb=x= (for simplicity, you can assume that \(x\) is no larger than \(8192=2^{13}\))  
+
+The output should be a sentence on the screen that gives the binary composition of \verb=x=. For instance,
+
+\begin{verbatim}
+2019 is 2**10 + 2**9 + 2**8 + 2**7 + 2**6 + 2**5 + 2**1 + 2**0
+\end{verbatim}
+\item
+Before you write the actual code, plan your project using pseudocode and comments (lines starting with \verb=#=). When you write the actual code, leave the pseudocode comments in.
+\item
+You may find the command \verb=str()= helpful: It converts a number into a string. For instance, \verb=str(5)= will give \verb="5"=
+\end{itemize}
+
+
+
+
+\section{For your portfolio}
+
+The markers will look for and assess the following:
+
+\begin{description}
+\item[File variables.py] $\;$\\
+\begin{itemize}
+\item
+The marker will look at your variables \(a\) and \(e\),  confirm that \(e\) has been created in the way that was specified in the instructions, and compare \(a\) to \(e\).
+\item
+The marker will test all possible values of \(X\) and \(Y\) and verify that \(W\) and \(Z\) behave as they should.
+\end{itemize}
+
+\item[File collatz.py] $\;$\\
+
+\begin{itemize}
+\item
+The marker will set n to some number and check that the code runs, terminates, and that it does indeed display the Collatz sequence. 
+\item
+The marker will verify that you have used pseudocode to plan and comment your project. 
+\end{itemize}
+
+
+\item[File mysterycode.py] $\;$\\
+
+\begin{itemize}
+\item
+The marker will look at the answer and check whether it is correct.
+\end{itemize}
+
+
+
+\item[File powersof2.py] $\;$\\
+
+\begin{itemize}
+\item
+The marker will verify that you have used pseudocode to plan and comment your project
+\item
+The marker will test your script using the number \verb_x=1750_  
+\item
+Partial grades will be given if the project is incomplete.
+\end{itemize}
+
+
+\end{description}
+
+
+
+You can add or edit things after the Practical session. We do not look at the commit date, we just want it all to be there!
+
+\end{document}
+
+
