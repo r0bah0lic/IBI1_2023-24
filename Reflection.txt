@@ -1,3 +1,5 @@
+# Note from 7/1/21, I have cloned this repo onto the ZJE server and am now going to attempt to push it back onto GitHub.
+
 This is an example file for reflection in IBI1_2019-20.
 
 During this course, I have learnt version control, how to navigate Unix-like systems and how to write simple programs in Python.
