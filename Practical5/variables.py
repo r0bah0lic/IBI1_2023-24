@@ -7,3 +7,14 @@ if d >= e:
   print("Los Angeles")
 if e >= d:
   print("Haining")
+
+X = True
+Y = False
+W = X and Y
+Z = X or Y
+bool(W)
+bool(Z)
+print("W is", W)
+print("Z is", Z)
+
+
