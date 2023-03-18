@@ -1,10 +1,14 @@
-#let i be the generation,and asumme it is from 1-8
-for i in range(1,8):
-#n is the number of the total rabbits
+#What is the number of the generation?
+#The first generation has 2 rabbits
+#if the number of rabbits(n) is smaller than 100
+#the generation(i) will add one
+#if the number of rabbits(n) is larger than 100
+#print the generation number that has more than 100 rabbits
+i=1
+n=2
+while n<=100:
   n=2**i
-#we want it to stop when total number of rabbits is larger than 100
-  if n <= 100:
-    print(i, "st generation", "are", n, "rabbits" )  
-  if n >= 100:
-    print("the number of generations required to exceed 100 rabbits is", 
-i)  
+  i+=1
+
+print("the number of generations required to exceed 100 rabbits is",
+i-1)
