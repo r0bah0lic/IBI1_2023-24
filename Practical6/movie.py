@@ -1,3 +1,8 @@
+#first make a directionary
+#import matplotlib first
+#type the total number,data,lables,colors,sizes and expodes one by one
+#print plt.show() to show the pie diagram
+
 movie = {'Comedy':73,'Action':42,'Romance':38,'Fantasy':28,'Science-fiction':22,'Horror':19,'Crime':18,'Documentary':12,'History':8,'War':7}
 
 import matplotlib.pyplot as plt
