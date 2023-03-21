@@ -1,4 +1,4 @@
-#first make a directionary
+#first to make a directionary
 #import matplotlib first
 #type the total number,data,lables,colors,sizes and expodes one by one
 #print plt.show() to show the pie diagram
