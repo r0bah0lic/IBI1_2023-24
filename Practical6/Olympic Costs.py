@@ -1,6 +1,16 @@
+#list the costs first
+#then store it of sorted values
+#print the sorted list
 costs = [1,8,15,7,5,14,43,40]
 costs.sort()
 print(costs)
+
+#import the matplotlib first
+#Initializes shortcuts to graph and subgraph axes
+#input the data of x axis and y axis
+#set the color of the bars
+#set the title of the diagram
+#show the picture
 
 import matplotlib.pyplot as plt
 fig, ax = plt.subplots()
