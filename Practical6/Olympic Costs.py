@@ -14,8 +14,6 @@ print(sorted_values)
 #set the title of the diagram
 #show the picture
 import numpy
-print(costs)
-import numpy
 cities=numpy.array(cities)
 costs=numpy.array(costs)
 sortedcosts=costs.argsort()
