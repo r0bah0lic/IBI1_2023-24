@@ -1,0 +1,2 @@
+My question is "What proportion of cases have died in the Germany?"
+Line 42-45 in covid.py is the code of the question 
