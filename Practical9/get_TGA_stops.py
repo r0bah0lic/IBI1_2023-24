@@ -1,4 +1,5 @@
 #Identify those genes containing a ‘TGA’ stop codon
+#open the file first
 import os
 os.chdir("/Users/misaki/IBI1_2022-23/Practical9")
 in_file = open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa', 'r')
@@ -22,3 +23,5 @@ with in_file as ip,out_file as op:
             if gene.search(new_gene):
                 op.write('{}\n{}\n\n'.format(new_gene_name,new_gene))
 
+in_file.close()
+out_file.close()
