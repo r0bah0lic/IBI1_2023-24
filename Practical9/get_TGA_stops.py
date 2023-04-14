@@ -1,7 +1,11 @@
 #Identify those genes containing a ‘TGA’ stop codon
 #open the file first
-import os
-os.chdir("/Users/misaki/IBI1_2022-23/Practical9")
+#use re.compile to select the name of the gene and the sequence of the gene that ends with TGA
+#create empty str "gene_name" and "gene"
+#choose the name line and pick out the name, stored as new_gene_name
+#choose the sequence lines and combine all the lines into one line, and pick out the ones that end with TGA, stored as new_gene
+#combine new_gene_name and new_gene together and output it as a new file 'TGA_genes.fa' 
+
 in_file = open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa', 'r')
 out_file =open('TGA_genes.fa','w')
 
