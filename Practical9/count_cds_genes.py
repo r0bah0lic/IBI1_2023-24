@@ -1,5 +1,7 @@
-import os
-os.chdir("/Users/misaki/IBI1_2022-23/Practical9")
+#open the given file
+#input the 'TGA', 'TAA' or 'TAG'
+
+#use len and re.findall to count the number of particular promoter
 
 in_file = open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa', 'r')
 
