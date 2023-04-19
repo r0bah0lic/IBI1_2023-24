@@ -1,7 +1,7 @@
 #Here is an example
 seq = 'AAAAATGCCCTAG'
 
-str = seq
+str = seq.upper()
 class calculator(object):
     def __init__(self,total_DNA, target_DNA):
         self.total = total_DNA
@@ -21,7 +21,7 @@ DNA.count()
 print("\nhere you can try a new DNA sequence")
 seq = input('DNA sequence:')
 
-str = seq
+str = seq.upper()
 class calculator(object):
     def __init__(self,total_DNA, target_DNA):
         self.total = total_DNA
