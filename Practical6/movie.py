@@ -16,3 +16,6 @@ plt.pie(sizes,explode=expodes,labels=labels,shadow=False,colors=colors,autopct='
 plt.title("Favourite movie genres among Chinese university students")
 plt.axis('equal')
 plt.show()
+
+favorite = movie["Comedy"]  #You can change the movie genre
+print(favorite)
