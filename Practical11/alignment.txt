@@ -1,0 +1,7 @@
+ human/mouse: 3579, 82.11180124223603%
+ human/cat: 3717, 85.21739130434782%
+ mouse/cat: 3592, 81.73913043478261%
+
+Human’s and cat’s sequences are most closely related.
+My guess is that of humans, cats, and mice, humans and cats have the closest evolutionary common ancestor
+Cats would also be more biologically similar to humans
