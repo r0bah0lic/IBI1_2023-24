@@ -9,5 +9,5 @@ class triathlon(object):
 	def add(self):
 		total = self.s + self.c + self.r
 		return total
-athlete = triathlon('MYan','Misaki','Japan',3,4,5)
+athlete = triathlon('MYan','Misaki','Japan',3,4,5) #You can change whatever you want
 print('first name:',athlete.first,' ','last name:',athlete.last,' ','location:',athlete.l,' ','swim time:',athlete.s,' ','cycle time:',athlete.c,' ','run time:',athlete.r,' ','total time:',athlete.add())
