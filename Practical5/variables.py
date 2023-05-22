@@ -16,5 +16,5 @@ bool(W)
 bool(Z)
 print("W is", W)
 print("Z is", Z)
-
+#The answer is W is False, Z is True
 
