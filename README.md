@@ -1,2 +1,1 @@
-# Extra test for student 18/3/22
-# IBI1_2021-22
+# Contaings teaching materials for IBI1 2023-24
