@@ -1,1 +1,1 @@
-# Contaings teaching materials for IBI1 2023-24
+# Contains teaching materials for IBI1 2023-24
