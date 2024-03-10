@@ -1,0 +1,5 @@
+This is an example file for reflection in IBI1_2023-24.
+
+During this course, I have learnt version control, how to navigate Unix-like systems and how to write simple programs in Python.
+
+I have also learnt to write careful instructions when communicating online!
